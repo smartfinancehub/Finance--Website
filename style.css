@@ -28,9 +28,9 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav a {
+    margin: 0 15px; /* Adds spacing between menu items */
     display: inline-block;
-    margin: 0 10px;
 }
 
 nav ul li a {
