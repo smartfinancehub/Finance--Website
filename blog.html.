@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Finance Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Finance Hub Blog</h1>
+    <p>Read our latest finance tips and news.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Blog content goes here -->
+    <article>
+      <h2>Budgeting 101: A Simple Guide to Taking Control of Your Finances</h2>
+      <p>
+        <!-- Your blog content here -->
+        Budgeting is an essential tool to manage your money effectively...
+      </p>
+    </article>
+    <!-- You can add more articles as needed -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Finance Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
