@@ -1,36 +1,67 @@
-body {body {
-    background-color: red;
-}
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
 }
 
+/* Header */
 header {
-    background: #007bff;
-    color: white;
-    padding: 20px;
+  background: #007bff;
+  color: #fff;
+  padding: 20px;
 }
 
+/* Navigation */
 nav ul {
-    list-style: none;
-    padding: 0;
-    background: #333;
+  list-style: none;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin: 10px;
+  display: inline-block;
+  margin: 0;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
 }
 
+nav ul li a:hover {
+  background: #555;
+}
+
+/* Main Content */
 main {
-    padding: 20px;
+  padding: 20px;
+}
+
+.intro,
+.featured {
+  background: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  position: relative; /* change to fixed if you want a sticky footer */
+  bottom: 0;
+  width: 100%;
 }
 
 footer {
