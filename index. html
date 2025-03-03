@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Finance Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #007bff;
-        }
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Smart Finance Hub</h1>
-    <p>Your source for the latest financial insights, tips, and updates.</p>
+    <h1>Finance--Website</h1>
+    <p>A finance website providing tips, insights, and news on personal finance, investing, and wealth building.</p>
 </body>
 </html>
