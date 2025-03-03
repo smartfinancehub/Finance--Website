@@ -3,68 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Finance Hub</title>
+    <title>Contact Us - Finance Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: white;
+            margin: 20px auto;
+            max-width: 500px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background: #f4f4f4;
         }
-        h2 {
-            color: #007bff;
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
         }
         input, textarea {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 8px;
+            margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
         button {
-            background-color: #007bff;
+            margin-top: 15px;
+            padding: 10px;
+            background: #007bff;
             color: white;
-            padding: 10px 15px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
-        }
-        .back-link {
-            display: block;
-            margin-top: 20px;
-            color: #007bff;
-            text-decoration: none;
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
-
+    <header>Contact Us</header>
     <div class="container">
-        <h2>Contact Us</h2>
-        <p>Have questions? Fill out the form below.</p>
+        <p>Have any questions? Fill out the form below and we'll get back to you.</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
         </form>
-
-        <a href="index.html" class="back-link">← Back to Home</a>
     </div>
-
 </body>
-          </html>
+</html>
+
           
