@@ -7,11 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f8f9fa;
             color: #333;
             text-align: center;
-            margin: 0;
-            padding: 0;
         }
         header {
             background-color: #007bff;
@@ -22,13 +22,13 @@
         }
         main {
             padding: 20px;
+            min-height: 80vh; /* Ensures content takes up space */
         }
         footer {
             background-color: #007bff;
             color: white;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
+            position: relative; /* Change from fixed to relative */
             width: 100%;
         }
     </style>
@@ -36,11 +36,15 @@
 <body>
 
     <header>Smart Finance Hub</header>
+
     <main>
         <h1>Welcome to Smart Finance Hub</h1>
-        <p>Your go-to platform for financial insights.</p>
+        <p>Your go-to platform for financial insights and updates.</p>
     </main>
-    <footer>&copy; 2025 Smart Finance Hub</footer>
+
+    <footer>
+        &copy; 2025 Smart Finance Hub
+    </footer>
 
 </body>
 </html>
