@@ -28,3 +28,31 @@
     </footer>
 </body>
 </html>
+<!-- Your existing website content -->
+
+<!-- Add the search bar at the end -->
+<h2>Search Articles</h2>
+<input type="text" id="searchBox" placeholder="Search..." onkeyup="searchFunction()">
+    
+<ul id="articles">
+    <li>How to Save Money</li>
+    <li>Best Investment Tips</li>
+    <li>Budgeting for Beginners</li>
+    <li>Understanding Taxes</li>
+</ul>
+
+<script>
+function searchFunction() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let articles = document.getElementById("articles").getElementsByTagName("li");
+
+    for (let i = 0; i < articles.length; i++) {
+        let text = articles[i].textContent.toLowerCase();
+        articles[i].style.display = text.includes(input) ? "" : "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
