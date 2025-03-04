@@ -66,8 +66,11 @@ main {
 
 #blog article h3 {
     color: #007BFF;
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger */
+    font-weight: bold; /* Make it bolder */
+    margin-bottom: 8px; /* Add space below the title */
 }
+
 
 /* Search Box */
 .search-box {
