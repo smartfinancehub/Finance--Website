@@ -65,4 +65,22 @@ footer {
     color: white;
     margin-top: 20px;
     }
+/* Make the navigation bar stack on smaller screens */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Make blog post cards stack on small screens */
+@media (max-width: 600px) {
+    .blog-posts {
+        display: block;
+    }
+    .blog-posts .post {
+        margin-bottom: 20px;
+    }
+}
 
