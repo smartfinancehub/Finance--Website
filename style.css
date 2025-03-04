@@ -69,3 +69,41 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+/* Improve spacing and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar spacing */
+nav {
+    padding: 15px 0;
+}
+
+/* Welcome text section */
+.welcome-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Footer spacing */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Search box spacing */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
