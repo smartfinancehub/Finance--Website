@@ -114,4 +114,12 @@ body {
     right: 10px;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
 
