@@ -141,3 +141,20 @@ body {
     color: blue;
     cursor: pointer;
 }
+.search-bar {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    color: #333;
+    font-size: 16px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
