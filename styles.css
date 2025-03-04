@@ -122,4 +122,18 @@ body {
         margin-top: 10px;
     }
 }
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
