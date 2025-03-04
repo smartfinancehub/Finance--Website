@@ -73,6 +73,12 @@ footer {
         text-align: center;
     }
 }
+/* Make content adjust to screen size */
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
 
 /* Make blog post cards stack on small screens */
 @media (max-width: 600px) {
