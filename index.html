@@ -5,82 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Finance Hub</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
+
     <header>
-    <h1>Smart Finance Hub</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#blog">Blog</a></li> <!-- Add this line -->
-        </ul>
-        
-    </nav>
-    </header>
-        </nav>
+        <h1>Smart Finance Hub</h1>
+        <p>Your go-to source for finance tips and strategies</p>
     </header>
 
-    <main>
-        <h2>Welcome to Smart Finance Hub</h2>
-        <p>Your #1 source for financial tips, news, and insights.</p>
-    </main>
     <section id="blog">
-    <h2>Latest Blog Posts</h2>
-    
-    <article>
-        <h3>How to Save Money</h3>
-        <p>Learn the best strategies for saving money and increasing your wealth...</p>
-        <a href="how-to-save-money.html">Read More</a>
-<a href="best-investment-tips.html">Read More</a>
-<a href="budgeting-for-beginners.html">Read More</a>
-<a href="understanding-taxes.html">Read More</a>
-        
+        <div class="blog-post">
+            <h2><a href="how-to-save-money.html">How to Save Money</a></h2>
+            <p>Learn the best strategies for saving money and increasing your wealth...</p>
+            <a href="how-to-save-money.html" class="read-more">Read More</a>
+        </div>
 
-    <article>
-        <h3>Understanding Taxes</h3>
-        <p>Learn how taxes work and how to manage them efficiently.</p>
-        <a href="blog/taxes.html" class="read-more">Read More</a>
-    </article>
+        <div class="blog-post">
+            <h2><a href="best-investment-tips.html">Best Investment Tips</a></h2>
+            <p>Discover the top investment strategies for long-term financial growth...</p>
+            <a href="best-investment-tips.html" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2><a href="budgeting-for-beginners.html">Budgeting for Beginners</a></h2>
+            <p>A beginner-friendly guide to budgeting your income effectively...</p>
+            <a href="budgeting-for-beginners.html" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2><a href="understanding-taxes.html">Understanding Taxes</a></h2>
+            <p>Learn how taxes work and how to manage them effectively...</p>
+            <a href="understanding-taxes.html" class="read-more">Read More</a>
+        </div>
     </section>
-    
-    
-    
-    
 
-    
-</body>
-</html>
-<!-- Your existing website content -->
-
-<!-- Add the search bar at the end -->
-<h2>Search Articles</h2>
-<input type="text" id="searchBox" placeholder="Search..." onkeyup="searchFunction()">
-    
-<ul id="articles">
-    <li>How to Save Money</li>
-    <li>Best Investment Tips</li>
-    <li>Budgeting for Beginners</li>
-    <li>Understanding Taxes</li>
-</ul>
-
-<script>
-function searchFunction() {
-    let input = document.getElementById("searchBox").value.toLowerCase();
-    let articles = document.getElementById("articles").getElementsByTagName("li");
-
-    for (let i = 0; i < articles.length; i++) {
-        let text = articles[i].textContent.toLowerCase();
-        articles[i].style.display = text.includes(input) ? "" : "none";
-    }
-}
-</script>
-<footer style="background-color: black; color: white; text-align: center; padding: 10px;">
-    © 2025 Smart Finance Hub. All rights reserved.
-</footer>
+    <footer>
+        <p>&copy; 2025 Smart Finance Hub. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
+
 
