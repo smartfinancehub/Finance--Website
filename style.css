@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,14 +7,16 @@ body {
     text-align: center;
 }
 
-/* Header */
+/* Header Styling */
 header {
     background: #007BFF;
     color: white;
     padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* Navigation */
+/* Navigation Menu */
 nav ul {
     list-style: none;
     padding: 0;
@@ -22,7 +24,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -31,54 +33,60 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Main Content */
+/* Main Content Area */
 main {
     padding: 20px;
 }
 
-/* Blog Section - Ensures Visibility */
+/* Blog Section */
 #blog {
-    display: block !important;
-    background-color: white;
-    color: black;
+    background: #ffffff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 }
 
-/* Footer */
-footer {
-    background: black;
-    color: white;
+#blog h2 {
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    color: #000;
+    font-size: 24px;
 }
 
-/* Search Bar */
-.search-container {
+#blog article {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid #007BFF;
+}
+
+#blog article h3 {
+    color: #007BFF;
+    font-size: 18px;
+}
+
+/* Search Box */
+.search-box {
     margin: 20px auto;
     max-width: 400px;
 }
 
-.search-container input {
+.search-box input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #blog {
-        width: 90%;
-        padding: 15px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
