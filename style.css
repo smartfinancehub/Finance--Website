@@ -1,42 +1,68 @@
-
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Navigation Menu */
 nav ul {
+    background: #0073e6;
+    padding: 10px;
     list-style: none;
-    padding: 0;
-    background: #007BFF;
     text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    font-weight: bold;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 20px;
-    background: #fff;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+    color: #0073e6;
+}
+
+/* Blog Section */
 section {
     padding: 20px;
 }
 
+article {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #007BFF;
+    background: #0073e6;
     color: white;
-}
+    margin-top: 20px;
+    }
+
