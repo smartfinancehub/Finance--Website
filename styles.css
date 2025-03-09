@@ -1,4 +1,83 @@
-/* Button styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Menu */
+nav ul {
+    background: #0073e6;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0073e6;
+}
+
+/* Blog Section */
+section {
+    padding: 20px;
+}
+
+article {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0073e6;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode article {
+    background: #222;
+    color: white;
+}
+
+/* Dark Mode Button */
 #dark-mode-toggle {
     background-color: #007bff;
     color: white;
@@ -6,10 +85,8 @@
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
     border-radius: 5px;
-    
-    /* Remove fixed position and place below navigation */
-    display: block;
-    margin: 15px auto; /* Center horizontally */
-    text-align: center;
 }
