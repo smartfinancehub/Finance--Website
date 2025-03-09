@@ -6,7 +6,6 @@
     
     <title>Finance Website</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <nav>
@@ -17,8 +16,10 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<!-- Dark Mode Toggle Button -->
-<button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+    <!-- Dark Mode Toggle Button (Only One) -->
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
     <header>
         <h1>Welcome to Finance Hub</h1>
         <p>Your go-to platform for financial tips, investment insights, and money management strategies.</p>
@@ -39,38 +40,29 @@
     <footer>
         <p>&copy; 2025 Finance Hub. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Dark Mode -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("dark-mode-toggle");
+        const body = document.body;
+
+        // Check if user has a saved preference
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+        }
+
+        toggleButton.addEventListener("click", function () {
+            body.classList.toggle("dark-mode");
+
+            // Save user preference
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    });
+    </script>
 </body>
 </html>
-
-
-<!-- JavaScript for Dark Mode -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("dark-mode-toggle");
-    const body = document.body;
-
-    // Check if user has a saved preference
-    if (localStorage.getItem("darkMode") === "enabled") {
-        body.classList.add("dark-mode");
-    }
-
-    toggleButton.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-
-        // Save user preference
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-        } else {
-            localStorage.setItem("darkMode", "disabled");
-        }
-    });
-});
-</script>
-<!-- Other content of your page -->
-
-<!-- Move Dark Mode Button to the End -->
-<button class="dark-mode-toggle">🌙 Dark Mode</button>
-
-<script src="dark-mode.js"></script> <!-- Ensure your dark mode script is here -->
-</body>
-
