@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("dark-mode-toggle");
     const body = document.body;
@@ -18,5 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("darkMode", "disabled");
         }
     });
+
+    // Load footer dynamically
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
 });
-</script>
