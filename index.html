@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <title>Finance Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +16,7 @@
         </ul>
     </nav>
 
-    <!-- Dark Mode Toggle Button (Only One) -->
+    <!-- Dark Mode Toggle Button -->
     <button id="dark-mode-toggle">🌙 Dark Mode</button>
 
     <header>
@@ -37,32 +36,8 @@
         </article>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Finance Hub. All rights reserved.</p>
-    </footer>
+    <div id="footer"></div>
 
-    <!-- JavaScript for Dark Mode -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const toggleButton = document.getElementById("dark-mode-toggle");
-        const body = document.body;
-
-        // Check if user has a saved preference
-        if (localStorage.getItem("darkMode") === "enabled") {
-            body.classList.add("dark-mode");
-        }
-
-        toggleButton.addEventListener("click", function () {
-            body.classList.toggle("dark-mode");
-
-            // Save user preference
-            if (body.classList.contains("dark-mode")) {
-                localStorage.setItem("darkMode", "enabled");
-            } else {
-                localStorage.setItem("darkMode", "disabled");
-            }
-        });
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
