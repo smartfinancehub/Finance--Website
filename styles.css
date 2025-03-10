@@ -57,27 +57,30 @@ article a {
     font-weight: bold;
 }
 
-/* Footer */
+/* Footer (Fix to Make It Span the Full Width) */
 footer {
     text-align: center;
     padding: 10px;
     background: #0073e6;
     color: white;
     margin-top: 20px;
+    width: 100%; /* Ensures footer spans the full width */
+    position: relative; /* Keeps it at the bottom */
 }
 
-/* Dark mode styles */
+/* Dark Mode Styles */
 .dark-mode {
     background-color: #121212;
     color: white;
 }
 
 .dark-mode article {
-    background: #222;
+    background: #1e1e1e; /* Better readability */
     color: white;
+    border: 1px solid #333; /* Slight border for separation */
 }
 
-/* Dark Mode Button */
+/* Dark Mode Toggle Button */
 #dark-mode-toggle {
     background-color: #007bff;
     color: white;
@@ -89,4 +92,9 @@ footer {
     bottom: 15px;
     right: 15px;
     border-radius: 5px;
+    z-index: 1000; /* Ensures button stays on top */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
 }
