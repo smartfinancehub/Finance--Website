@@ -1,2 +1,22 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Your Site
+description: My Jekyll site
+
+# Build settings
+theme: minima  # Replace with your theme if different (e.g., minimal-mistakes-jekyll)
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio
 
