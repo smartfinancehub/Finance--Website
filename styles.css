@@ -28,7 +28,7 @@ nav ul li a {
 
 /* Dark mode for nav links */
 .dark-mode nav ul li a {
-    color: #e0e0e0; /* Light color for links in dark mode */
+    color: #e0e0e0;
 }
 
 nav ul li a:hover {
@@ -80,7 +80,7 @@ article a {
 }
 
 .dark-mode article a {
-    color: #66b0ff; /* Lighter blue for links in dark mode */
+    color: #66b0ff;
 }
 
 /* Footer */
@@ -114,12 +114,22 @@ footer button:hover {
 
 /* Dark mode for footer */
 .dark-mode footer {
-    background-color: #003a80; /* Slightly darker blue for dark mode */
+    background-color: #003a80;
 }
 
 /* Dark Mode Styles */
 .dark-mode {
     background-color: #121212;
+    color: white;
+}
+
+/* Dark mode for section content */
+.dark-mode section p,
+.dark-mode section div {
+    color: white;
+}
+
+.dark-mode section h2 {
     color: white;
 }
 
@@ -166,35 +176,7 @@ textarea {
 }
 
 button {
-    margin-top: 15px; 
-    #back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: none; /* Hide am by default */
-    z-index: 1000; /* Make sure e dey on top of other elements */
-}
-
-#back-to-top:hover {
-    background-color: #005bb5;
-}
-    /* Add transition for background and text color changes */
-body, nav, header, section, article, footer, form, input, textarea, button {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Dark mode for back-to-top button */
-.dark-mode #back-to-top {
-    background-color: #003a80;
-    color: white;
-}
+    margin-top: 15px;
     padding: 10px;
     background: #0073e6;
     color: white;
@@ -206,4 +188,9 @@ body, nav, header, section, article, footer, form, input, textarea, button {
 
 button:hover {
     background: #005bb5;
+}
+
+.dark-mode button {
+    background: #003a80;
+    color: white;
 }
