@@ -142,3 +142,28 @@ button {
 button:hover {
     background: #005bb5;
 }
+footer {
+    display: flex; /* This one go make the footer children align for one line */
+    justify-content: space-between; /* This go push the copyright text go left and button go right */
+    align-items: center; /* This go make dem align vertically for middle */
+    padding: 10px 20px; /* Add small padding so e no dey too close to edge */
+    background-color: #0056b3; /* This be the blue color wey I see for your footer */
+    color: white; /* The text for footer dey white */
+    font-family: Arial, sans-serif; /* Choose font wey match your site */
+}
+
+footer p {
+    margin: 0; /* Remove any default margin so e no dey shift */
+}
+
+footer button {
+    background-color: transparent; /* Remove background so e no dey clash */
+    border: none; /* Remove border so e look clean */
+    color: white; /* Make the button text and emoji white */
+    font-size: 16px; /* Make the button text size normal */
+    cursor: pointer; /* Add pointer so when you hover, e show say e dey clickable */
+}
+
+footer button:hover {
+    text-decoration: underline; /* When you hover, e go show small underline */
+}
