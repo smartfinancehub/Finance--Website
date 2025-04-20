@@ -166,7 +166,31 @@ textarea {
 }
 
 button {
-    margin-top: 15px;
+    margin-top: 15px; 
+    #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; /* Hide am by default */
+    z-index: 1000; /* Make sure e dey on top of other elements */
+}
+
+#back-to-top:hover {
+    background-color: #005bb5;
+}
+
+/* Dark mode for back-to-top button */
+.dark-mode #back-to-top {
+    background-color: #003a80;
+    color: white;
+}
     padding: 10px;
     background: #0073e6;
     color: white;
