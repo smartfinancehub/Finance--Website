@@ -21,3 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// Add this inside the existing "DOMContentLoaded" event listener
+const backToTopButton = document.getElementById("back-to-top");
+
+if (backToTopButton) {
+    // Show/hide button when scrolling
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) { // Show button after scrolling down 300px
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
+    });
+}
