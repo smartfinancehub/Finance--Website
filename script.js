@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("dark-mode-toggle");
+    const toggleButton = document.querySelector("footer button"); // Find the button inside the footer
     const body = document.body;
 
     // Apply saved dark mode preference
@@ -19,17 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem("darkMode", "disabled");
             }
         });
-    }
-
-    // Load footer dynamically if element exists
-    const footerDiv = document.getElementById("footer");
-    if (footerDiv) {
-        fetch("footer.html")
-            .then(response => {
-                if (!response.ok) throw new Error("Footer not found");
-                return response.text();
-            })
-            .then(data => footerDiv.innerHTML = data)
-            .catch(error => console.error("Error loading footer:", error));
     }
 });
