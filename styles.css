@@ -185,6 +185,10 @@ button {
 #back-to-top:hover {
     background-color: #005bb5;
 }
+    /* Add transition for background and text color changes */
+body, nav, header, section, article, footer, form, input, textarea, button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
 
 /* Dark mode for back-to-top button */
 .dark-mode #back-to-top {
