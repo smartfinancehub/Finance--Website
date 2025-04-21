@@ -1,22 +1,22 @@
-# Site settings
-title: Your Site
-description: My Jekyll site
-
-# Build settings
-theme: minima  # Replace with your theme if different (e.g., minimal-mistakes-jekyll)
+title: Finance Hub
+description: Your finance tips and tricks
+baseurl: ""  # Change to "/finance-hub" if using GitHub Pages
+url: "http://localhost:4000"  # Update to your domain when deploying
+markdown: kramdown
 permalink: /:categories/:title/
-
-# Collections
 collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
-
-# Defaults
 defaults:
   - scope:
       path: ""
       type: portfolio
     values:
       layout: portfolio
-
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      
